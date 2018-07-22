@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Commons Host</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.6.3/tailwind.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="container mx-auto px-32 pt-5">
+        <nav class="flex justify-between pb-16 px-16">
+            <div class="benchnine text-5xl">
+                Commons Host
+            </div>
+            <div class="futura self-center text-lg">
+                <a class="text-black" href="#">Log In</a>
+                <a class="bg-black text-white px-3 mx-3 py-2 my-2" href="#">Sign Up →</a>
+            </div>
+        </nav>
+        <div class="border-t-4 border-b-4 border-black mx-64 py-6">
+            <div class="benchnine text-6xl font-black px-16 leading-none">
+                Next-gen HTTP/2 performance hosting, <br>
+                made easy.
+            </div>
+        </div>
+        <div class="flex flex-col items-center my-16">
+            <div class="text-white bg-black px-6 py-4" href="#">
+                <a class="text-white text-xl" href="#">Sign Up</a> →
+            </div>
+        </div>
+        <div class="flex">
+            <div class="w-1/2 pr-8" id="left">
+                <h3 class="american-typewriter text-xl pb-4">Upload static assets to a free *.commons.host subdomain.</h3>
+                <p class="font-sans pb-4">Ideal for quick prototypes. Simple deploys from the command line or CI.</p>
+
+                <h3 class="american-typewriter text-xl pb-4">Custom domain &amp; TLS certificate</h3>
+                <p class="font-sans pb-4">Automatic encryption for connections powered by Letsencrypt. Point your DNS record and go!.</p>
+
+                <h3 class="american-typewriter text-xl pb-4">Built from the ground up for HTTP/2.</h3>
+                <p class="font-sans pb-4">Designed to serve orders of magnitude more Server Push responses than other servers and CDNs per request.</p>
+
+                <h3 class="american-typewriter text-xl pb-4">Goodbye, leaky abstractions.</h3>
+                <p class="font-sans pb-4">Former best practices are now anti-patterns. No more spritesheets, code bundles, SVG stacks, icon fonts, etc.</p>
+            </div>
+            <div class="w-1/2 pl-8" id="right">
+                <h3 class="american-typewriter text-xl pb-4">Supports any static site generator. Any frontend framework. Any SPA/PWA.</h3>
+                <p class="font-sans pb-4">HTTP/2 Server Push works at the protocol level so it supports any file type. HTML, JavaScript, CSS, images, fonts, media, etc. No plugins or loaders required.</p>
+
+                <h3 class="american-typewriter text-xl pb-4">Making easy things easy, and hard things possible</h3>
+                <p class="font-sans pb-4">Easy to use JSON configuration for effortless control over pushing and caching strategies.</p>
+            
+                <h3 class="american-typewriter text-xl pb-4">Bundle live RESTful API responses with your frontend.</h3>
+                <p class="font-sans pb-4">HTTP/2 can push API calls along with your frontend code. Same connection, served faster.</p>
+            </div>
+        </div>
+        <div class="text-center mb-32 mt-16">
+            <code class="px-5 py-6 text-left inline-block bg-black text-white text-xl font-mono whitespace-pre-wrap">$ npm i -g @commonshost/cli
+
+$ commonshost deploy
+
+    ✔ Loading configuration
+    ✔ Bundling custom options
+    ✔ Indexing files
+    ✔ Uploading
+
+Deployment successful. Now available at:
+
+    https://finest-witty-turtle.commons.host</code>
+        </div>
+        <div class="futura mx-32 text-xl font-thin px-12">
+            <p class="mb-10">Built on Node.js and native bindings to nghttp2, the same high-performance library used by Apache and Curl.</p>
+            <p class="mb-10">100% free and open source software (FOSS). With a commercially sustainable software as a service (SaaS) to fund R&amp;D.</p>
+        </div>
+        
+        <div class="flex px-32 pb-8">
+            <div class="w-1/3 border-t-4 border-black m-6"></div>
+            <div class="w-1/3 text-center text-5xl benchnine font-bold">Key Features</div>
+            <div class="w-1/3 border-t-4 border-black m-6"></div>
+        </div>
+
+        <div class="flex">
+            <div class="w-1/2 pr-8 text-center text-4xl benchnine" id="left">
+                <p class="pb-10">HTTP/2 Server Push</p>
+                <p class="pb-10">Connection Coalescing</p>
+                <p class="pb-10">Node.js &amp; nghttp2</p>
+                <p class="pb-10">CORS &amp; Service Workers</p>
+                <p class="pb-10">Custom Domain Name</p>
+                <p class="pb-10">DIY or SaaS or Localhost</p>
+            </div>
+            <div class="w-1/2 pr-8 text-center text-4xl benchnine" id="right">
+                <p class="pb-10">Cache Manifests</p>
+                <p class="pb-10">Alternative Service (AltSvc)</p>
+                <p class="pb-10">Immutable Caching</p>
+                <p class="pb-10">Automated TLS Certificate</p>
+                <p class="pb-10">HTTPS/1.1 Fallback</p>
+                <p class="pb-10">Brotli &amp; Zoplfi Compression</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
